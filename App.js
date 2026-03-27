@@ -18,5 +18,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#4b4b4aa3',
     alignItems: 'center',
     justifyContent: 'center',
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
   },
 });
