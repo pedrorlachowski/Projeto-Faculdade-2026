@@ -45,3 +45,14 @@ export async function BuscarUsuarioParaLogin(email, senha) {
             return null;
         }
 }
+
+export async function CarregarAnimais() {
+    try {
+        const db = await SQLite.openDatabaseAsync('zoo.db');
+        const animais = await db.getAllAsync('SELECT * FROM animais');
+        return animais;
+    } catch (error) {
+        console.error("Erro ao carregar animais:", error);
+        throw error;
+    }
+}

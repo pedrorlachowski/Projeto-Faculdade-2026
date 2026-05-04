@@ -10,17 +10,25 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         alignItems: "center",
         justifyContent: "center",
-        
+        color: "#fffffff6"
+    },
+
+    text2: {
+        marginBottom: 40,
+        fontSize: 20,
+        fontWeight: "bold",
+        alignItems: "center",
+        justifyContent: "center",
     },
 
     container: {
       flex: 1,
-      backgroundColor: '#ffffff',
+      backgroundColor: '#bcff98',
       padding: 80,
     },
     button: {
-        paddingVertical: 15,
-        paddingHorizontal: 40,
+        paddingVertical: 8,
+        paddingHorizontal: 30,
         backgroundColor: '#034f2e', 
         borderRadius: 70,
         marginTop: 20,
@@ -44,7 +52,10 @@ export default function TelaInicial({navigation}) {
     return (
         <View style={styles.container}>
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                <Text style={styles.text}>Bem Vindo ao ZOO!</Text>
+                <Text style={styles.text}>Bem Vindo ao Speci!</Text>
+                <Text style={styles.text2}>
+                    O mundo animal na palma da sua mão.
+                </Text>
                 <TelaInicialImagem/>
             </View>
             <View>
