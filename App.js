@@ -11,6 +11,7 @@ import TelaPrincipal from './telas/TelaPrincipal';
 import TelaInicial from './telas/TelaInicial';
 import Login from './telas/Login';
 import PrimeiroLogin from './telas/PrimeiroLogin';
+import Detalhes from './telas/Detalhes';
 // Não usar bibliotecas web para componentes React Native, pois elas não são compatíveis. 
 // Use apenas as bibliotecas nativas do React Native.
 const Stack = createNativeStackNavigator();
@@ -40,7 +41,7 @@ export default function App() {
       <View 
       style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
       >
-        <ActivityIndicator size="large" color="#0dfaaf" />
+        <ActivityIndicator size="large" color="#defad7" />
       </View>
 
     );
@@ -52,7 +53,7 @@ export default function App() {
       <Stack.Navigator 
         initialRouteName="TelaInicial"
         screenOptions={{
-          contentStyle: { backgroundColor: '#ffffff' } // Aplica a cor de fundo em todas as telas
+          contentStyle: { backgroundColor: 'rgb(240, 240, 240)' } // Aplica a cor de fundo em todas as telas
         }}
       > 
         <Stack.Screen 
@@ -77,6 +78,14 @@ export default function App() {
         component={TelaPrincipal}
         options={{title: "Área Principal"}}
         />
+
+        <Stack.Screen
+        name="Detalhes"
+        component={Detalhes}
+        options={{title: "Detalhes do Animal"}}
+        />
+
+
       </Stack.Navigator>
     </NavigationContainer>
   );

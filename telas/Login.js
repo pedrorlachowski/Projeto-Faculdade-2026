@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
         marginBottom: 40,
         fontSize: 35,
         fontWeight: "bold",
-        color: '#070707',
+        color: '#2D5A27',
     },
 
     input: {
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
 
         paddingVertical: 15,
         paddingHorizontal: 40,
-        backgroundColor: '#034f2e', 
+        backgroundColor: '#2D5A27', 
         borderRadius: 70,
         marginTop: 20,
         elevation: 8,
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
         },
         buttonText: {
 
-        color: '#5cf73d',
+        color: '#fafffd',
         fontSize: 16,
         fontWeight: 'bold',
         textAlign: 'center',
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
             <View style={styles.container}>
 
                 <Text style={styles.text}>
-                    Faça seu login para acessar o ZOO!
+                    Faça seu login para acessar o Speci!
                 </Text>
 
                 <TextInput

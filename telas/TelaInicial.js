@@ -1,7 +1,6 @@
 // Tela Inicial
 import {useState} from "react";
-import { Text, StyleSheet, TouchableOpacity } from "react-native";
-import { View } from "react-native";
+import { Text, StyleSheet, TouchableOpacity,View } from "react-native";
 import TelaInicialImagem from "../componentesjs/TelaInicialImagem";
 const styles = StyleSheet.create({
     text: {
@@ -10,7 +9,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         alignItems: "center",
         justifyContent: "center",
-        color: "#fffffff6"
+        color: "#2D5A27"
     },
 
     text2: {
@@ -23,13 +22,13 @@ const styles = StyleSheet.create({
 
     container: {
       flex: 1,
-      backgroundColor: '#bcff98',
+      backgroundColor: '#ebebeb',
       padding: 80,
     },
     button: {
         paddingVertical: 8,
         paddingHorizontal: 30,
-        backgroundColor: '#034f2e', 
+        backgroundColor: '#2D5A27', 
         borderRadius: 70,
         marginTop: 20,
         elevation: 8,
@@ -40,7 +39,7 @@ const styles = StyleSheet.create({
        
     },
     buttonText: {
-        color: '#5cf73d',
+        color: '#fafffd',
         fontSize: 16,
         fontWeight: 'bold',
         textAlign: 'center',

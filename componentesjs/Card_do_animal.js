@@ -13,7 +13,7 @@ export default function Card_do_animal({animal, onpress}) {
         <Pressable style={styles.card} onPress={onpress}>
 
             <Image 
-            source={require('../assets/tigre.jpg')} 
+            source={{uri: animal.imagem_url}} 
             style={styles.image} 
             resizeMode ='cover'
             transition={500}
@@ -42,18 +42,18 @@ export default function Card_do_animal({animal, onpress}) {
 }
  const styles = StyleSheet.create({
     card: {
-        backgroundColor: '#FFF',
+        backgroundColor: '#81bc71',
         borderRadius: 15,
         marginVertical: 10,
         marginHorizontal: 15,
         flexDirection: 'row', // Alinha imagem à esquerda e texto à direita
         overflow: 'hidden',
     // Sombras para Android e iOS
-        elevation: 3,
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
+        elevation: 5,
+        shadowColor: '#2D5A27',
+        shadowOffset: { width: 0, height: 10 },
         shadowOpacity: 0.1,
-        shadowRadius: 4,
+        shadowRadius: 20,
         minHeight: 110, // Altura mínima para garantir que o card tenha um tamanho consistente
     },
     image: {
@@ -91,14 +91,14 @@ export default function Card_do_animal({animal, onpress}) {
         marginTop: 8,
     },
     tag: {
-        backgroundColor: '#E8F5E9',
+        backgroundColor: '#2D5A27',
         paddingHorizontal: 10,
         paddingVertical: 5,
         borderRadius: 8,
     },
     tagtext: {
         fontSize: 11,
-        color: '#2D5A27',
+        color: '#f7faf6',
         fontWeight: '600',
         textTransform: 'uppercase',
     },

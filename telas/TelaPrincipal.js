@@ -19,9 +19,10 @@ container: {
         borderBottomColor: '#EEE',
     },
     title: {
-        fontSize: 24,
-        fontWeight: 'bold',
+        fontSize: 22,
+        fontWeight: '800',
         color: '#2D5A27',
+        letterSpacing: -0.5,
     },
     listContent: {
         paddingBottom: 20, // Espaço extra no fim da lista
@@ -61,7 +62,7 @@ export default function TelaPrincipal({navigation}) {
                 renderItem={({ item }) => (
                     <Card_do_animal 
                         animal={item}
-                        onpress={() => navigation.navigate('TelaDetalhes', { animal: item.id_animal })}   
+                        onpress={() => navigation.navigate('Detalhes', { animal: item })}   
                     />
                 )}
                 ListEmptyComponent={<Text style={styles.empty}>Nenhum animal encontrado.</Text>}

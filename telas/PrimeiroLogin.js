@@ -9,7 +9,8 @@ const styles = StyleSheet.create({
         marginBottom: 40,
         fontSize: 35,
         fontWeight: "bold",
-        color: '#070707',
+        color: '#034f2e',
+        justifyContent: "center",
     },
 
     container: {
@@ -21,7 +22,7 @@ const styles = StyleSheet.create({
     input: {
         width: '100%',
         height: 55,
-        backgroundColor: '#F8F9FA',
+        backgroundColor: '#ffffff',
         borderRadius: 12,
         paddingHorizontal: 16,
         fontSize: 16,
@@ -88,7 +89,7 @@ export default function PrimeiroLogin({navigation}) {
         <View style={styles.container}>
 
             <Text style={styles.text}>
-                Crie sua conta no ZOO!
+                Crie sua conta no Speci!
             </Text>
 
             <TextInput
